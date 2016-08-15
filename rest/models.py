@@ -9,10 +9,10 @@ class Sound(models.Model):
     # Missing <keywords> model
     # Missing <category> model
 
-    sha1 = models.CharField(max_length=40)  # TODO: length must be 40 always
-    codec = models.CharField(max_length=30)
-    size = models.IntegerField()
-    duration = models.FloatField()
+    sha1 = models.CharField(editable=False, max_length=40, unique=True)  # TODO: length must be 40 always
+    codec = models.CharField(editable=False, max_length=30)
+    size = models.IntegerField(editable=False)
+    duration = models.FloatField(editable=False)
 
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
