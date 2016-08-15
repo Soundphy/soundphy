@@ -24,6 +24,7 @@ class SoundList(generics.ListCreateAPIView):
         duration = 0.0  # TODO
         tempfile = self.request._files['sound'].file.name
         sha1 = hashfile(open(tempfile, 'rb'), hashlib.sha1()).hex()
+        self.request._files['sound']._name = sha1
         # TODO: validate calculated parameters before saving
         # TODO: if file already uploaded, do not save
         serializer.save(codec=codec, size=size, duration=duration, sha1=sha1)
