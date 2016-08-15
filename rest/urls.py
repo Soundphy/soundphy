@@ -5,7 +5,7 @@ from rest import views
 
 urlpatterns = [
     url(r'^sounds/$', views.SoundList.as_view()),
-    url(r'^sounds/(?P<pk>[0-9]+)/$', views.SnippetDetail.as_view()),
+    url(r'^sounds/(?P<pk>[0-9]+)/$', views.SoundDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

@@ -29,6 +29,6 @@ class SoundList(generics.ListCreateAPIView):
         serializer.save(codec=codec, size=size, duration=duration, sha1=sha1)
 
 
-class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
+class SoundDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Sound.objects.all()
     serializer_class = SoundSerializer
