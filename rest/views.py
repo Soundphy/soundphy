@@ -1,7 +1,8 @@
 import hashlib
 
 from rest.models import Sound
-from rest.serializers import SoundSerializer
+from rest.serializers import SoundListCreateSerializer
+from rest.serializers import SoundRetrieveUpdateDestroySerializer
 from rest_framework import generics
 
 
@@ -15,7 +16,7 @@ def hashfile(afile, hasher, blocksize=65536):
 
 class SoundList(generics.ListCreateAPIView):
     queryset = Sound.objects.all()
-    serializer_class = SoundSerializer
+    serializer_class = SoundListCreateSerializer
 
     def perform_create(self, serializer):
         sound = self.request._files['sound']
@@ -32,4 +33,4 @@ class SoundList(generics.ListCreateAPIView):
 
 class SoundDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Sound.objects.all()
-    serializer_class = SoundSerializer
+    serializer_class = SoundRetrieveUpdateDestroySerializer
