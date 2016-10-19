@@ -1,0 +1,8 @@
+rm -f db.sqlite3
+rm -rf upload/
+rm -rf rest/__pycache__
+rm -rf rest/migrations
+rm -rf soundphy/__pycache__
+python manage.py makemigrations rest
+python manage.py migrate
+python manage.py runserver
