@@ -9,7 +9,8 @@ class Sound(models.Model):
     # Missing <keywords> model
     # Missing <category> model
 
-    sha1 = models.CharField(editable=False, max_length=40, unique=True)  # TODO: length must be 40 always
+    # TODO: length must be 40 always
+    sha1 = models.CharField(editable=False, max_length=40, unique=True)
     codec = models.CharField(editable=False, max_length=30)
     size = models.IntegerField(editable=False)
     duration = models.FloatField(editable=False)
