@@ -19,13 +19,13 @@ class SoundList(generics.ListCreateAPIView):
     serializer_class = SoundListCreateSerializer
 
     def perform_create(self, serializer):
-        sound = self.request._files['sound']
+        sound = self.request.FILES['sound']
+
         codec = sound.content_type.split('/')[-1]
         size = sound._size
         duration = 0.0  # TODO
-        tempfile = self.request._files['sound'].file.name
-        sha1 = hashfile(open(tempfile, 'rb'), hashlib.sha1()).hex()
-        self.request._files['sound']._name = sha1
+        sha1 = hashfile(sound.file, hashlib.sha1()).hex()
+
         # TODO: validate calculated parameters before saving
         # TODO: if file already uploaded, do not save
         serializer.save(codec=codec, size=size, duration=duration, sha1=sha1)
