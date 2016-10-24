@@ -48,8 +48,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'soundphy'
-copyright = u'Copyright (c) The Soundphy contributors.'
+project = u'Soundphy'
+copyright = u'2016, The Soundphy contributors.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -199,8 +199,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', 'soundphy.tex', u'soundphy Documentation',
-     u'Copyright (c) The Soundphy contributors.', 'manual'),
+    ('index', 'soundphy.tex', u'Soundphy Documentation',
+     u'The Soundphy contributors.', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -228,8 +228,8 @@ latex_logo = 'logo/logo.png'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'soundphy', u'soundphy Documentation',
-     [u'Copyright (c) The Soundphy contributors.'], 1)
+    ('index', 'soundphy', u'Soundphy Documentation',
+     [u'The Soundphy contributors'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -241,9 +241,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'soundphy', u'soundphy Documentation',
-     u'Copyright (c) The Soundphy contributors.', 'soundphy',
-     'One line description of project.', 'Miscellaneous'),
+    ('index', 'soundphy', u'Soundphy Documentation',
+     u'The Soundphy contributors.', 'soundphy',
+     'Soundphy web service', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
