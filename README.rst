@@ -4,7 +4,7 @@
 
 
 Testing
--------
+=======
 
 Install test requirements and simply run tox:
 
@@ -16,9 +16,10 @@ Install test requirements and simply run tox:
 .. |logo|
    image:: docs/source/logo/logo.png
       :width: 100px
+      :target: https://soundphy.readthedocs.io/
 .. |build_status|
    image:: https://api.travis-ci.org/Soundphy/soundphy.svg?branch=master
-   :target: https://travis-ci.org/Soundphy/soundphy
+      :target: https://travis-ci.org/Soundphy/soundphy
 .. |documentation_status|
    image:: https://readthedocs.org/projects/soundphy/badge/
-   :target: http://soundphy.readthedocs.io/
+      :target: https://soundphy.readthedocs.io/
