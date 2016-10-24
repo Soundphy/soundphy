@@ -4,6 +4,8 @@ from rest.models import Sound
 from rest.serializers import SoundListCreateSerializer
 from rest.serializers import SoundRetrieveUpdateDestroySerializer
 from rest_framework import generics
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 
 def hashfile(afile, hasher, blocksize=65536):
@@ -15,6 +17,9 @@ def hashfile(afile, hasher, blocksize=65536):
 
 
 class SoundList(generics.ListCreateAPIView):
+    authentication_classes = (SessionAuthentication, BasicAuthentication)
+    permission_classes = (IsAuthenticated,)
+
     queryset = Sound.objects.all()
     serializer_class = SoundListCreateSerializer
 
@@ -32,5 +37,8 @@ class SoundList(generics.ListCreateAPIView):
 
 
 class SoundDetail(generics.RetrieveUpdateDestroyAPIView):
+    authentication_classes = (SessionAuthentication, BasicAuthentication)
+    permission_classes = (IsAuthenticated,)
+
     queryset = Sound.objects.all()
     serializer_class = SoundRetrieveUpdateDestroySerializer
