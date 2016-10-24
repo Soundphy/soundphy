@@ -26,12 +26,11 @@ class SoundList(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         sound = self.request.FILES['sound']
-
         codec = sound.content_type.split('/')[-1]
         size = sound._size
         duration = 0.0  # TODO
         sha1 = hashfile(sound.file, hashlib.sha1()).hex()
-
+        sound._name = sha1
         # TODO: validate calculated parameters before saving
         # TODO: if file already uploaded, do not save
         serializer.save(codec=codec, size=size, duration=duration, sha1=sha1)
