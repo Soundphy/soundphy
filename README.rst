@@ -14,7 +14,7 @@ Install test requirements and simply run tox:
    tox
 
 .. |logo|
-   image:: docs/source/logo/logo.svg
+   image:: docs/source/logo/logo.png
       :width: 100px
 .. |build_status|
    image:: https://api.travis-ci.org/Soundphy/soundphy.svg?branch=master
