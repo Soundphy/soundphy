@@ -1,11 +1,12 @@
 import hashlib
 
 from rest.models import Sound
+from rest_framework import generics
 from rest.serializers import SoundListCreateSerializer
 from rest.serializers import SoundRetrieveUpdateDestroySerializer
-from rest_framework import generics
-from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.authentication import BasicAuthentication
+from rest_framework.authentication import SessionAuthentication
 
 
 def hashfile(afile, hasher, blocksize=65536):
