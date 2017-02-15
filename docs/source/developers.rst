@@ -59,6 +59,5 @@ Documentation is generated with Sphinx. In order to generate the documentation l
 
 .. code-block:: bash
 
-   pip install sphinx
-   pip install sphinx_rtd_theme
+   pip install -r requirements_dev.txt
    make html
