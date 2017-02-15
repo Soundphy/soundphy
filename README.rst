@@ -28,6 +28,6 @@ Install test requirements and simply run tox:
 .. |codecov| image:: https://codecov.io/github/soundphy/soundphy/coverage.svg?branch=master
    :target: https://codecov.io/github/soundphy/soundphy
    :alt: Coverage (codecov) badge
-.. |requirements| image:: https://requires.io/github/soundphy/soundphy/requirements.svg
-   :target: https://requires.io/github/soundphy/soundphy/requirements/
+.. |requirements| image:: https://requires.io/github/Soundphy/soundphy/requirements.svg
+   :target: https://requires.io/github/Soundphy/soundphy/requirements/
    :alt: Requirements badge
