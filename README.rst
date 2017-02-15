@@ -5,15 +5,11 @@
 |requirements|
 
 
-Testing
-=======
+Soundphy
+========
 
-Install test requirements and simply run tox:
+Soundphy is a collaborative sounds web service and database. Documentation can be found at the `official website <https://soundphy.readthedocs.io/>`_.
 
-.. code-block:: bash
-
-   pip install -r requirements_test.txt
-   tox
 
 .. |logo|
    image:: docs/source/logo/logo.png
