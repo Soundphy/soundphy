@@ -1,6 +1,8 @@
 |logo|
 
 |build_status| |documentation_status|
+|codecov|
+|requirements|
 
 
 Testing
@@ -23,3 +25,9 @@ Install test requirements and simply run tox:
 .. |documentation_status|
    image:: https://readthedocs.org/projects/soundphy/badge/
       :target: https://soundphy.readthedocs.io/
+.. |codecov| image:: https://codecov.io/github/soundphy/soundphy/coverage.svg?branch=master
+   :target: https://codecov.io/github/soundphy/soundphy
+   :alt: Coverage (codecov) badge
+.. |requirements| image:: https://requires.io/github/soundphy/soundphy/requirements.svg
+   :target: https://requires.io/github/soundphy/soundphy/requirements/
+   :alt: Requirements badge

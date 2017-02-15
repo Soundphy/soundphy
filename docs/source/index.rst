@@ -2,13 +2,27 @@
 soundphy - |version|
 ********************
 
-Hello World
 
-Doc generation
-==============
+.. index:: abstract
 
-.. code:: bash
+What is Soundphy?
+-----------------
 
-  pip install sphinx
-  pip install sphinx_rtd_theme
-  make html
+Soundphy is a sounds web service and database.
+
+
+Contents
+--------
+
+.. toctree::
+   :maxdepth: 2
+
+   developers.rst
+   license.rst
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`
