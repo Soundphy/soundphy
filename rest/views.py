@@ -18,9 +18,6 @@ def hashfile(afile, hasher, blocksize=65536):
 
 
 class SoundList(generics.ListCreateAPIView):
-    authentication_classes = (SessionAuthentication, BasicAuthentication)
-    permission_classes = (IsAuthenticated,)
-
     queryset = Sound.objects.all()
     serializer_class = SoundListCreateSerializer
 
