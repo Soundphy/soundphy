@@ -3,4 +3,6 @@ __pycache__/
 .tox/
 .coverage
 *.pyc
+db.sqlite3
+.env/
 *.swp
