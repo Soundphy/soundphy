@@ -7,10 +7,23 @@ Developers
 
 
 .. index::
+    double: developers; dependencies
+
+Installing dependencies
+=======================
+
+To install the required dependencies for developing Soundphy, you can make use of the provided `requirements_dev.txt` file: 
+
+.. code-block:: bash
+
+   pip install -r requirements_dev.txt
+
+
+.. index::
     double: developers; tests
 
-Running the tests
-=================
+Running tests
+=============
 
 Running the tests locally is very simple, using
 `Tox <https://tox.readthedocs.io/>`_ from the top level path of the project:
@@ -55,9 +68,8 @@ new functionality), just run:
 Generating documentation
 ========================
 
-Documentation is generated with Sphinx. In order to generate the documentation locally you need to install the required dependencies and run `make` from the `docs` directory:
+Documentation is generated with Sphinx. In order to generate the documentation locally you need to run `make` from the `docs` directory:
 
 .. code-block:: bash
 
-   pip install -r requirements_dev.txt
    make html

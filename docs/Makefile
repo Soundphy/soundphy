@@ -9,6 +9,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(SPHINXOPTS) source
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       standalone HTML files"
+	@echo "  pdf        Portable Document Format"
 	@echo "  changes    overview of all changed/added/deprecated items"
 	@echo "  linkcheck  check all external links for integrity"
 
@@ -20,7 +21,7 @@ html:
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
-latexpdf:
+pdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	make -C $(BUILDDIR)/latex all-pdf
