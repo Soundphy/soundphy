@@ -23,7 +23,7 @@ def test_sounds_empty_database(client):
 
 
 @pytest.mark.django_db
-def test_sounds_number_empty_database(client):
+def test_sounds_get_some_empty_database(client):
     """
     Get a no existent sound in an empty database should result in 301 error.
     Any client can make this request (no authentication needed).
