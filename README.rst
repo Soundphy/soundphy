@@ -21,8 +21,8 @@ Soundphy is a collaborative sounds web service and database. Documentation can b
 .. |documentation_status|
    image:: https://readthedocs.org/projects/soundphy/badge/
       :target: https://soundphy.readthedocs.io/
-.. |codecov| image:: https://codecov.io/github/soundphy/soundphy/coverage.svg?branch=master
-   :target: https://codecov.io/github/soundphy/soundphy
+.. |codecov| image:: https://codecov.io/github/Soundphy/soundphy/coverage.svg?branch=master
+   :target: https://codecov.io/github/Soundphy/soundphy
    :alt: Coverage (codecov) badge
 .. |requirements| image:: https://requires.io/github/Soundphy/soundphy/requirements.svg
    :target: https://requires.io/github/Soundphy/soundphy/requirements/
