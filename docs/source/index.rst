@@ -18,6 +18,7 @@ Contents
    :maxdepth: 2
 
    developers.rst
+   deployment.rst
    license.rst
 
 
